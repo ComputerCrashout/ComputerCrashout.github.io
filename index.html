@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Resume</title>
+    <style>
+        /* Dark Theme Design System */
+        :root {
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent: #bb86fc;
+            --accent-hover: #3700b3;
+            --border: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: var(--accent);
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            margin: 5px 0;
+        }
+
+        .contact-links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        section {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 0;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        /* Lists and Grid formatting */
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .grid-list li {
+            background-color: var(--bg-dark);
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .job, .project {
+            margin-bottom: 20px;
+        }
+
+        .job:last-child, .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .job-company, .project-tech {
+            color: var(--accent);
+        }
+
+        .date {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>Vũ Thanh Hải</h1>
+            <p>Information technology @ HCMUS</p>
+            <div class="contact-links">
+                <a href="mailto:vthai2526@clc.fitus.edu.vn">vthai2526@clc.fitus.edu.vn</a> | 
+                <a href="https://linkedin.com" target="_blank">None</a> | 
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section>
+            <h2>Objective</h2>
+            <p>First-year Computer Science student at Ho Chi Minh City University of Science (HCMUS). Passionate about programming methodologies, algorithms, and software development. Looking to build strong technical foundations, participate in hackathons, and collaborate on open-source projects.</p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            <div class="job-header">
+                <span>Ho Chi Minh City University of Science (HCMUS)</span>
+                <span class="date">2025 - Present</span>
+            </div>
+            <p style="margin: 5px 0 0 0; color: var(--text-muted);">Bachelor of Computer Science (1st Year Student)</p>
+            <p style="margin: 5px 0 0 0; font-size: 0.95rem;"><strong>Relevant Coursework:</strong> Introduction to Programming, Programming Methodology, Advanced Mathematics, Discrete Mathematics.</p>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Skills & Tools</h2>
+            <ul class="grid-list">
+                <li>C / C++</li>
+                <li>HTML / CSS</li>
+                <li>Git & GitHub</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <h2>Academic & Personal Projects</h2>
+
+            <div class="project">
+                <div class="project-header">
+                    <span>Programming Methodology Course Project</span>
+                    <span class="project-tech">C / C++</span>
+                </div>
+                <p>Developed a console-based application (such as a student management system or a basic game) utilizing structural programming, dynamic memory allocation, and file processing techniques.</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span>Personal Resume Website</span>
+                    <span class="project-tech">HTML, CSS, GitHub Pages</span>
+                </div>
+                <p>Designed and deployed a responsive, dark-themed digital portfolio layout to host my academic journey and log upcoming tech stacks directly through code.</p>
+            </div>
+        </section>
+
+        <!-- ACTIVITIES -->
+        <section>
+            <h2>Activities & Clubs</h2>
+            <div class="job">
+                <div class="job-header">
+                    <span>Member / Volunteer</span>
+                    <span class="date">2025 - Present</span>
+                </div>
+                <p style="margin: 5px 0; color: var(--accent);">HCMUS Tech Clubs / Youth Union Events</p>
+                <ul>
+                    <li>Participated in university seminars, tech talks, and community bonding activities.</li>
+                    <li>Engaged in group discussions to tackle basic coding challenges and logic puzzles.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
 
